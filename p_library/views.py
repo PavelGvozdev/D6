@@ -1,15 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Book, Publisher
-
-from p_library.models import Author
-from p_library.forms import AuthorForm, BookForm
+from django.http.response import HttpResponseRedirect
 from django.views.generic import CreateView, ListView
 from django.urls import reverse_lazy
-
 from django.forms import formset_factory
-from django.http.response import HttpResponseRedirect
+from p_library.models import Author
+from p_library.forms import AuthorForm, BookForm
+from .models import Book, Publisher
 
 # Create your views here.
 def books_list(request):
@@ -118,5 +116,5 @@ def books_authors_create_many(request):
 
 def base(request):
     template = loader.get_template('start_story.html')
-    return HttpResponse(template.render)
+    return HttpResponse(template.render())
 

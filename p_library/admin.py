@@ -9,7 +9,7 @@ class BookAdmin(admin.ModelAdmin):
         return obj.author.full_name
 
     list_display = ('title', 'author_full_name',)
-    fields = ('ISBN', 'title', 'description', 'year_release', 'author', 'price', 'publisher', 'friend')
+    fields = ('ISBN', 'title', 'description', 'year_release', 'author', 'price', 'publisher', 'friend', 'book_cover',)
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):

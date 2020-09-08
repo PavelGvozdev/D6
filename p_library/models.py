@@ -20,6 +20,7 @@ class Book(models.Model):
   friend = models.ForeignKey("p_library.Friend", on_delete=models.SET_NULL, verbose_name=_("Читатель"), related_name="book_reader", null=True)
   copy_count = models.SmallIntegerField(default=1)
   price = models.DecimalField(max_digits=7, decimal_places=2)
+  book_cover = models.ImageField(height_field=200, width_field=100, null=True)
 
   def __str__(self):
     return self.title

@@ -1,0 +1,21 @@
+h1 {
+  font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-size: 3.2rem;
+  color: blue;
+}
+
+p {
+  font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: blueviolet;
+}
+
+li {
+  font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: blueviolet;
+}

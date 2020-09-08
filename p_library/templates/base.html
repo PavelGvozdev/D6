@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {{title}}
+  <div class="content container">
+    <h1>Это начало. С него все и началось.</h1>
+    <p>Здесь начало вашей истории</p>
+    {% block start %}
+    {% endblock %}
+    <h1>А вот, что было потом. После начала.</h1>
+    <p>Здесь середина вашей истории</p>
+    {% block middle %}
+    {% endblock %}
+    <h1>Закончилось все вот этим. Концом истории.</h1>
+    <p>Здесь конец вашей истории</p>
+    {% block end %}
+    {% endblock %}
+  </div>
+</body>
+</html>
